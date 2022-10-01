@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-links">
+                <div class="hamburger" onclick="toggleMobile(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    <ul class="mobile-menu">
+                        <li class="menu-items"><a href="#">Collections</a></li>
+                        <li class="menu-items"><a href="#">Men</a></li>
+                        <li class="menu-items"><a href="#">Women</a></li>
+                        <li class="menu-items"><a href="#">About</a></li>
+                        <li class="menu-items"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <img src="./ecommerce-product-page-main/images/logo.svg" alt="" class="nav-logo">
+                <ul class="menu">
+                    <li class="menu-items"><a href="#">Collections</a></li>
+                    <li class="menu-items"><a href="#">Men</a></li>
+                    <li class="menu-items"><a href="#">Women</a></li>
+                    <li class="menu-items"><a href="#">About</a></li>
+                    <li class="menu-items"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-img">
+                <img src="./ecommerce-product-page-main/images/icon-cart.svg" alt="" class="nav-cart">
+                <div class="cart-badge"></div>
+                <img src="./ecommerce-product-page-main/images/image-avatar.png" alt="" class="nav-person">
+            </div>
+        </nav>
+        <div class="my-cart">
+            <div class="cart-header">
+                <img src="./ecommerce-product-page-main/images/icon-close.svg" alt="" class="check-out">
+                <h1>My Cart</h1>
+                <img src="./ecommerce-product-page-main/images/icon-cart.svg" alt="" >
+            </div>
+            <div class="cart-items">
+            </div>
+            <button class="check-out">
+                <span>X</span>
+                Check Out
+            </button>
+        </div>
+        <div class="main">
+            <div class="product-img">
+                <div class="mobile-img">
+                    <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="" class="main-product mob-product"> 
+                    <div class="mobslide-btn">
+                        <button class="btn-bef" onclick="prev()">
+                            <img src="./ecommerce-product-page-main/images/icon-previous.svg" alt="">
+                        </button>
+                        <button class="btn-aft" onclick="next()">
+                            <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="img-main">
+                    <div class="showcase-img">
+                        <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="" class="main-product">
+                        <img src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="" class="main-product">
+                        <img src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="" class="main-product">
+                        <img src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="" class="main-product">  
+                    </div>
+                    <div class="popup">
+                        <button class="btn-close">
+                            <img src="./ecommerce-product-page-main/images/icon-close.svg" alt="">
+                        </button>
+                        <div class="slide-btn">
+                            <button class="btn-prev" onclick="sideSlide(-1)">
+                                <img src="./ecommerce-product-page-main/images/icon-previous.svg" alt="">
+                            </button>
+                            <button class="btn-next" onclick="sideSlide(1)">
+                                <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="showcase-img">
+                            <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="" class="popmain-product pop-slide">
+                            <img src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="" class="popmain-product pop-slide">
+                            <img src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="" class="popmain-product pop-slide">
+                            <img src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="" class="popmain-product pop-slide">
+                        </div>
+                        <div class="img-thumbnails pop-thumbnails">
+                            <div class="thumb-item pop-item" onclick="popSlide(1)">
+                                <a href="#" data-id = "1">
+                                    <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="" srcset="" class="thumb">
+                                </a>
+                            </div>
+                            <div class="thumb-item pop-item" onclick="popSlide(2)">
+                                <a href="#" data-id = "2">
+                                    <img src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="" srcset="" class="thumb">
+                                </a>
+                            </div>
+                            <div class="thumb-item pop-item" onclick="popSlide(3)">
+                                <a href="#" data-id = "3">
+                                    <img src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="" srcset="" class="thumb">
+                                </a>
+                            </div>
+                            <div class="thumb-item pop-item" onclick="popSlide(4)">
+                                <a href="#" data-id = "4">
+                                    <img src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="" srcset="" class="thumb">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-thumbnails">
+                    <div class="thumb-item">
+                        <a href="#" data-id = "1">
+                            <img src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="" srcset="" class="thumb">
+                        </a>
+                    </div>
+                    <div class="thumb-item">
+                        <a href="#" data-id = "2">
+                            <img src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="" srcset="" class="thumb">
+                        </a>
+                    </div>
+                    <div class="thumb-item">
+                        <a href="#" data-id = "3">
+                            <img src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="" srcset="" class="thumb">
+                        </a>
+                    </div>
+                    <div class="thumb-item">
+                        <a href="#" data-id = "4">
+                            <img src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="" srcset="" class="thumb">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <h2>SNEAKER COMPANY</h2>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.
+                </p>
+                <div class="price">
+                    <div class="cur-price">
+                        <div class="amount">$125.00</div>
+                        <div class="per-off">50%</div>
+                    </div>
+                    <div class="prev-price">$250.00</div>
+                </div>
+                <div class="cart-buttons">
+                    <div class="add-rem">
+                        <button class="minus">
+                            <img src="./ecommerce-product-page-main/images/icon-minus.svg" alt="">
+                        </button>
+                       <div class="counter">0</div>
+                        <button class="add">
+                            <img src="./ecommerce-product-page-main/images/icon-plus.svg" alt="">
+                        </button>
+                    </div>
+                    <button class="cart-btn">
+                        <img src="./ecommerce-product-page-main/images/icon-cart.svg" alt="" class="btn-cart">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
